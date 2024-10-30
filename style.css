@@ -25,6 +25,74 @@ body {
   color: #343a40;
   border-bottom: 8px solid #9a7e6f;
 }
+.navbar {
+  text-decoration: none;
+  background-color: #9a7e6f;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo a {
+  font-size: 35px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+.nav-btn {
+  background-color: #9a7e6f;
+  margin-left: 10px;
+  border-radius: 50px;
+  padding: 10px;
+  width: 99px;
+  cursor: pointer;
+}
+.nav-btn {
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+}
+.nav-btn:hover,
+.nav-btn:active {
+  background-color: #54473f;
+}
+
+h2::after {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  content: "New";
+  color: black;
+  background-color: yellow;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: 80px;
+  right: 150px;
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 
 .container {
   width: 960px;
@@ -48,10 +116,6 @@ h2 {
   column-gap: 80px;
 }
 
-.main-imag {
-  box-shadow: 0 20px 30px 0px rgba(0, 0, 0, 0.5);
-}
-
 .btn:link,
 .btn:visited {
   background-color: #9a7e6f;
@@ -60,11 +124,13 @@ h2 {
   text-transform: uppercase;
   font-weight: 500;
   display: inline block;
+  border-radius: 50px;
 }
 
 .btn:hover,
 .btn:active {
   background-color: #54473f;
+  border-radius: 50px;
 }
 
 .btn--big {
@@ -75,6 +141,11 @@ h2 {
 .btn--small {
   font-size: 14px;
   padding: 8px 12px;
+}
+
+.main-imag {
+  box-shadow: 0 20px 30px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
 }
 
 /* ------------------------ */
@@ -136,6 +207,7 @@ img {
   background-color: #9a7e6f;
   color: #fff;
   padding: 24px;
+  border-radius: 12px;
 }
 
 .testimonial-box {
@@ -158,6 +230,7 @@ img {
 /* CHAIRS */
 .chair {
   box-shadow: 0 20px 30px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
 }
 
 .chair-box {
