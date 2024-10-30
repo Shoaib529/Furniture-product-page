@@ -22,9 +22,9 @@ Grey Color:#212529
 /* ------------------------ */
 body {
   font-family: sans-serif;
-  color: #343a40;
+  color: #33302e;
   border-bottom: 8px solid #9a7e6f;
-  background-color: bisque;
+  background-color: antiquewhite;
 }
 .navbar {
   text-decoration: none;
