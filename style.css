@@ -24,20 +24,30 @@ body {
   font-family: sans-serif;
   color: #343a40;
   border-bottom: 8px solid #9a7e6f;
+  background-color: bisque;
 }
 .navbar {
   text-decoration: none;
   background-color: #9a7e6f;
+  height: 60px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   padding-right: 15px;
   padding-left: 15px;
+  padding-top: 10px;
 }
 .navdiv {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.logo a {
+
+/*.logo {
+  width: 75px;
+  height: 75px;
+  padding-top: 1px;
+}*/
+
+.brand-name a {
   font-size: 35px;
   text-decoration: none;
   font-weight: bold;
@@ -53,8 +63,11 @@ li a {
   font-weight: bold;
   margin-right: 25px;
   text-decoration: none;
+  font-size: 25px;
 }
-
+li a:hover {
+  color: #4d3324;
+}
 .nav-btn {
   background-color: #9a7e6f;
   margin-left: 10px;
@@ -84,7 +97,7 @@ h2::after {
   display: inline-block;
   padding: 5px 10px;
   position: absolute;
-  top: 80px;
+  top: 100px;
   right: 150px;
   animation: blinker 1s linear infinite;
 }
@@ -186,7 +199,7 @@ img {
 
 /* FEATURES */
 .feature-icon {
-  stroke: #9a7e6f;
+  stroke: #54473f;
   width: 32px;
   height: 32px;
   margin-bottom: 16px;
@@ -259,7 +272,7 @@ h3 {
 }
 
 .chair-icons {
-  stroke: #9a7e6f;
+  stroke: #54473f;
   width: 24px;
   height: 24px;
 }
@@ -270,8 +283,31 @@ h3 {
   font-size: 20px;
 }
 
+/* ///PAGINATION////*/
+
+.pagination {
+  text-align: center;
+  font-family: cursive;
+}
+.pagination a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 15px;
+  display: inline-block;
+}
+.pagination a.active {
+  background-color: #9a7e6f;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.pagination a:hover:not(.active) {
+  background-color: rgb(201, 184, 184);
+  border-radius: 5px;
+}
+
 footer {
   margin-bottom: 48px;
   font-size: 14px;
   color: gray;
+  padding-top: 50px;
 }
